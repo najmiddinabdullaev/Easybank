@@ -35,6 +35,7 @@ body {
   letter-spacing: -0.25px;
   background-color: #fafafa;
   color: var(--grey);
+  overflow-x: hidden;
 }
 
 img {
@@ -178,6 +179,8 @@ img {
 /* SITE-HEADER */
 
 .site-header {
+  position: relative;
+  z-index: 50;
   background-color: #fff;
 }
 
@@ -200,39 +203,44 @@ img {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* HERO */
 
 .hero {
-  padding-top: 138px;
-  padding-bottom: 85px;
+  position: relative;
+  z-index: 30;
+  padding-top: 170px;
+  padding-bottom: 170px;
   background-image: url(../img/hero-bg-desktop.svg);
   background-repeat: no-repeat;
-  background-position: calc(50% + 700px) ;
-}
-
-.hero__container {
+  background-position: calc(50% + 593px) -261px;
 }
 
 .hero__content {
+  width: 100%;
+  max-width: 450px;
 }
+
 .hero__title {
+  padding-top: 0;
+  padding-bottom: 24px;
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 100;
+  color: var(--black);
+  letter-spacing: -1px;
 }
-.hero__description {
+
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-size: 18px;
+  line-height: 28px;
 }
-.hero__action {
-}
-.button {
-}
+
 .hero__img {
+  position: absolute;
+  width: 730px;
+  height: 900px;
+  left: calc(50% + 74px);
+  top: -112px;
 }
